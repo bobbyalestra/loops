@@ -1,5 +1,5 @@
 
-// console logs all the names that have a letter B in them
+// console logs all the names that have a letter B in them in lowercase and alphatbetical order
 
 let names = ['Bobby', 'Brittany',  'Brett', "Bibble", 'John', "Arnell", "will"].sort();
 
