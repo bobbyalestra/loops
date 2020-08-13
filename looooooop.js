@@ -1,5 +1,5 @@
 // take the string turn it into an array and sep
-// log the length of each array
+//  console.log the length of each array
 
 
 let string = "use-recursion-to-do-things"

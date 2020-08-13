@@ -1,5 +1,5 @@
 
-//  
+//  capitalize the first letter each word
 
 let string =  "I'm a little tea pot"
 let newString = string.split(' ');
@@ -11,4 +11,4 @@ for (let i = 0 ; i < newString.length; i++){
 
     
 }
-console.log(newString.join(" "))
+console.log(newString.join(" "))  
