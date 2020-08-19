@@ -24,19 +24,28 @@
 
 let numbersArray = [358276442183, 355932218848, 3554259136937, 5602212994565, 353022164588, 639921161300, 56022354427689,51087587653044, 6333641549180, 560224431936850, 5020192861974, 676324012630737, 3530627464605, 63043786670877, 372301634211413 ];
 
+// adding a 1 to the initializer instead of zero doeesnt log the first sub array twice
+// adding a -1 to the conditions will prevent it from log undefined and NaN at the last log
 
-for (let i = 0; i < numbersArray.length; i++){
-    let number1 = numbersArray[i];
-    let number2 = numbersArray[i + 1];
-    let numTotal = number1 + number2;
-    let groupNumbers = [ [number1, number2, numTotal], [number1, number2, numTotal], [number1, number2, numTotal], [number1, number2, numTotal], [number1, number2, numTotal], [number1, number2, numTotal] ]
+for (let i = 1; i < numbersArray.length -1; i++){
+    
+        let number1 = numbersArray[i];
+        let number2 = numbersArray[i + 1];
+        let numTotal = number1 + number2;
 
-    for (let i = 0; i < groupNumbers.length; i++){
-        for (let j = 0; j < groupNumbers[i].length; j++){
+        let arrayNew = []
+        arrayNew.push(number1, number2, numTotal);
 
-            console.log(groupNumbers[i][j])
+        // this will log all number1, number2, numTotal
+        console.log(arrayNew);
+        
+        // this will log the first number1, number2, numTotal
+        console.log (arrayNew[i]);
+        
 
+        if ( arrayNew[i] > arrayNew[i + 1]){
+
+            // this will log the first number1, number2, numTotal
+          console.log (arrayNew[i])
         }
     }
-
-}
