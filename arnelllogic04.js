@@ -42,14 +42,14 @@ for (let i = 1; i < numbersArray.length - 1; i++){
         numTotalArray.push(numTotal);
 
         
-        console.log(typeof(numTotalArray) , "");
+        console.log((highestTotal) , "");
 
         if (highestTotal < highestTotal + 1 ){
 
             highestTotal = highestTotal + 1;
 
        
-       
+            console.log((highestTotal) , "");
         }
 
             // gives me each total
